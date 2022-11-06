@@ -1,9 +1,18 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import {AiFillGithub, AiOutlineWhatsApp, AiOutlineInstagram} from "react-icons/ai"
+import Script from 'next/script'
+import {AiFillGithub, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 import {BsChevronDoubleDown} from "react-icons/bs"
 
 export default function Home() {
+
+  const toggleMenu = () => {
+    const nav = document.getElementById('nav');
+    const bg = document.getElementById('bg');
+    nav.classList.toggle('active');
+    bg.classList.toggle('active')
+  }
+
   return (
     <>
       <Head>
@@ -12,16 +21,22 @@ export default function Home() {
         <link rel="icon" href="/I.a-icon.ico" />
       </Head>
 
-      <section className='w-5/6 rounded-3xl fixed top-3 left-1/2 -translate-x-2/4 z-10 py-3'>
-          <div className='flex justify-between mx-2'> {/*Flex para organizar cabeçalho*/}
+      <Script src="/bg-header.js" strategy={'lazyOnload'}></Script>
+
+      <section id="bg" className='w-5/6 transition ease-in-out duration-500 rounded-3xl fixed top-3 left-1/2 -translate-x-2/4 z-10 py-2'>
+          <div id="bg2" className='flex transition ease-in-out duration-500 justify-between mx-2'> {/*Flex para organizar cabeçalho*/}
             <Link href="#"><img src="/logo-ia-80.png" width={80} heigth={60}/></Link>
 
-            <nav className='flex py-2 items-center'>
-              <li className='text-white text-lg font-medium ml-16'><Link href="#">Inicio</Link></li>
-              <li className='text-white text-lg font-medium ml-16'><Link href="#">Sobre</Link></li>
-              <li className='text-white text-lg font-medium ml-16'><Link href="#">Projetos</Link></li>
-              <li className='text-white text-lg font-medium ml-16'><Link href="#">Habilidades</Link></li>
-              <li className='text-white text-lg font-medium ml-16'><Link href="#">Contato</Link></li>
+            <nav id="nav" className='flex py-2 items-center transition duration-500 ease-in-out'>
+              <ul id='menu' className='flex justify-center items-center gap-10 transition duration-500 ease-in-out'>
+                <li className='text-white text-lg font-medium transition duration-500 ease-in-out'><Link href="#">Inicio</Link></li>
+                <li className='text-white text-lg font-medium transition duration-500 ease-in-out'><Link href="#">Sobre</Link></li>
+                <li className='text-white text-lg font-medium transition duration-500 ease-in-out'><Link href="#">Projetos</Link></li>
+                <li className='text-white text-lg font-medium transition duration-500 ease-in-out'><Link href="#">Habilidades</Link></li>
+                <li className='text-white text-lg font-medium transition duration-500 ease-in-out'><Link href="#">Contato</Link></li>
+              </ul> 
+              <AiOutlineMenu id="burger" onClick={toggleMenu} className="lg:hidden text-4xl text-white cursor-pointer transition duration-500 ease-in-out" />
+              <AiOutlineClose id="close" onClick={toggleMenu} className="text-4xl text-white cursor-pointer hidden transition duration-500 ease-in-out"/>
             </nav>
           </div>
       </section>
