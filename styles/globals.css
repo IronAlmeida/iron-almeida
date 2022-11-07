@@ -2,29 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #0F172A;
+}
 
 * {
-    font-family: 'Arimo', sans-serif;
     outline: none;
     list-style: none;
 }
 
+#bg{
+    transition: 0.5s ease-in;
+}
+
 .bg{
     background-color: #0F172A;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in;
 }
 
 .bg2{
     justify-content: space-around;
-    transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 1023px){
     #menu{
         display: block;
         top: 76px;
-        transition: 0.5s ease-in-out;
         height: 0;
         @apply absolute;
         @apply right-0;
@@ -39,26 +43,27 @@
     }
 
     #menu li {
-        transition: 0.5s ease-in-out;
         @apply font-bold;
-        @apply py-10;
+        @apply py-8;
         @apply border-opacity-10;
     }
 
     #nav.active #menu{
         height: 100vh;
-        transition: 0.5s ease-in-out;
+        transition: 0.9s ease;
         @apply visible;
-        @apply overflow-y-auto;
+        @apply overflow-y-scroll;
     }
 
     #nav.active #close{
-        transition: 0.5s ease-in-out;
         @apply block;
     }
     #nav.active #burger{
-        transition: 0.5s ease-in-out;
         @apply hidden;
+    }
+
+    #bg{
+        transition: 0.5s ease-in;
     }
 
     #bg.active {
@@ -66,8 +71,12 @@
         height: 100vh;
         top: 0;
         border-radius: 0;
-        transition: 0.5s ease-in-out;
-        background-color: rgba(15, 23, 42, 0.3);
+        transition: 0.5s ease-in;
+        background-color: rgba(15, 23, 42, 0.5);
         backdrop-filter: blur(6px);
     }
+}
+
+@media (max-width: 320px){
+
 }
