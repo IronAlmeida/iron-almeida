@@ -1,8 +1,11 @@
 import '../styles/globals.css'
-import { Roboto } from '@next/font/google'
+import { Roboto, Raleway } from '@next/font/google'
 
 const roboto = Roboto({
-  weight: '400',
+  weight: '400'
+})
+const raleway = Raleway({
+  weight: '400'
 })
 
 function MyApp({ Component, pageProps }) {
@@ -10,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <style jsx global>{`
         html {
-          font-family: ${roboto.style.fontFamily};
+          font-family: ${raleway.style.fontFamily};
         }
       `}</style>
       <Component {...pageProps} />
