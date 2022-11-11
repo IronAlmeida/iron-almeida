@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 ::-webkit-scrollbar{
     width: 5px;
@@ -21,8 +21,17 @@
     transition: 0.5s ease-in;
 }
 
-.bg2{
-    justify-content: space-around;
+.style-3d{
+    transform-style: preserve-3d;
+}
+
+.backface {
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.rotate {
+    transform: rotateY(180deg);
 }
 
 @media (max-width: 1023px){
