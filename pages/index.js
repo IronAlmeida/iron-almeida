@@ -53,7 +53,7 @@ export default function Home() {
 
       <Script src="/bg-header.js" strategy={'lazyOnload'}></Script>
 
-      <section id="bg" className='w-5/6 rounded-3xl fixed z-20 top-3 left-1/2 -translate-x-2/4 py-2'>
+      <header id="bg" className='w-5/6 rounded-3xl fixed z-20 top-3 left-1/2 -translate-x-2/4 py-2'>
           <div className='flex justify-between mx-2'> {/*Flex para organizar cabeçalho*/}
             <div className='min-[2200px]:w-[10%]'>
               <Link href="#"><img className='w-full' src="/logo-ia-80.png"/></Link>
@@ -71,9 +71,9 @@ export default function Home() {
               <AiOutlineClose id="close" onClick={toggleMenu} className="text-4xl text-white cursor-pointer hidden"/>
             </nav>
           </div>
-      </section>
+      </header>
 
-      <section className='w-full h-[27rem] min-[300px]:h-[29rem] min-[320px]:h-[31rem] min-[361px]:h-[35rem] min-[421px]:h-[41rem] min-[481px]:h-[48rem] min-[541px]:h-[53rem] min-[601px]:h-[60rem] min-[701px]:h-[70rem] min-[768px]:h-[23rem] min-[860px]:h-[26rem] min-[940px]:h-[29rem] min-[1080px]:h-[33rem] min-[1200px]:h-[35rem] min-[1280px]:h-[40rem] min-[1380px]:h-[43rem] min-[1500px]:h-[46rem] min-[1620px]:h-[49rem] min-[1730px]:h-[52rem] min-[1880px]:h-[56rem] min-[2050px]:h-[60rem] min-[2200px]:h-[64rem] min-[2340px]:h-[68rem] min-[2500px]:h-[74rem]'>
+      <section className='w-full relative h-[27rem] min-[300px]:h-[29rem] min-[320px]:h-[31rem] min-[361px]:h-[35rem] min-[421px]:h-[41rem] min-[481px]:h-[48rem] min-[541px]:h-[53rem] min-[601px]:h-[60rem] min-[701px]:h-[70rem] min-[768px]:h-[23rem] min-[860px]:h-[26rem] min-[940px]:h-[29rem] min-[1080px]:h-[33rem] min-[1200px]:h-[35rem] min-[1280px]:h-[40rem] min-[1380px]:h-[43rem] min-[1500px]:h-[46rem] min-[1620px]:h-[49rem] min-[1730px]:h-[52rem] min-[1880px]:h-[56rem] min-[2050px]:h-[60rem] min-[2200px]:h-[64rem] min-[2340px]:h-[68rem] min-[2500px]:h-[74rem]'>
         <video className="w-full absolute hidden md:block" src="/bg-ia-horizontal.mp4" autoPlay loop muted />
         <video className="w-full absolute block md:hidden" src="/bg-ia-vertical.mp4" autoPlay loop muted />
         <div className='w-full relative top-40 min-[421px]:top-48 min-[541px]:top-64 min-[701px]:top-80 min-[768px]:top-24 min-[1024px]:top-32 min-[1280px]:top-40 min-[1500px]:top-52'>
@@ -89,12 +89,12 @@ export default function Home() {
         <BsChevronDoubleDown className="w-1/4 m-auto animate-bounce relative max-[320px]:top-64 max-[360px]:top-72 max-[420px]:top-80 max-[480px]:top-96 max-[540px]:top-[27rem] max-[600px]:top-[30rem] max-[700px]:top-[33rem] max-[767px]:top-[38rem] md:top-40 min-[890px]:top-48 min-[1110px]:top-52 min-[1220px]:top-60 min-[1280px]:top-72 min-[1500px]:top-[22rem] min-[1800px]:top-[26rem] min-[2200px]:top-[30rem] text-white text-xl min-[421px]:text-3xl min-[541px]:text-4xl min-[640px]:text-5xl min-[768px]:text-xl min-[1024px]:text-2xl min-[1800px]:text-3xl min-[2200px]:text-5xl mt-2" />   
       </section>
 
-      <section className='w-full pt-2 px-2 bg-[#4B4F5F] md:bg-gradient-to-l md:from-[#5b606b] md:via-[#373c47] md:to-[#5b606b]'>
+      <section className='w-full pt-2 px-3 bg-[#4B4F5F] md:bg-gradient-to-l md:from-[#5b606b] md:via-[#373c47] md:to-[#5b606b]'>
         <div className='w-full flex flex-wrap md:flex-nowrap md:items-center min-[900px]:items-end lg:w-5/6 min-[2200px]:w-4/6 m-auto'>
           <div className='w-full z-10 px-10'>
             <img className='m-auto' src='sobre-img.png' />
           </div>
-          <div className='w-full py-6 px-2 text-center md:mt-8 xl:px-8 xl:text-left min-[1680px]:px-16'>
+          <div className='w-full py-6 text-center md:mt-8 xl:px-8 xl:text-left min-[1680px]:px-16'>
             <h2 className='text-5xl text-white italic font-bold'>Sobre mim</h2>
             <br />
             <p className='text-xl text-white min-[1500px]:text-2xl'>Olá! Me chamo Iron Almeida (acho que isso está meio óbvio &#x1F604;), sou desenvolvedor iniciante na criação de sites e aplicativos. Amante da tecnologia, entrei no mundo da programação ao fim do ensino médio e desde então venho buscando evoluir meus conhecimentos. Possuo ampla experiência em HTML e CSS, atualmente meu foco principal é no universo da linguagem JavaScript a qual tenho 1 ano de experiência com noções em Next.js, Node e React Native e iniciando estudos em Flutter para densenvolvimento de aplicativos multiplataforma.</p>
@@ -102,18 +102,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='w-full bg-[#f0f0f0] py-4'>
-        <div className='w-full m-auto text-center mt-6'>
+      <section className='w-full bg-[#f0f0f0] py-16'>
+        <div className='w-full m-auto text-center'>
           <h2 className='text-[#373c47] text-5xl italic font-bold'>Projetos</h2>
         </div>
-        <div className='w-full justify-around m-auto p-2 sm:p-4 mt-4 flex flex-wrap md:flex-nowrap md:mt-8 min-[1200px]:w-5/6'>
+        <div className='w-full px-6 justify-around m-auto mt-12 flex flex-wrap md:flex-nowrap md:mt-8 min-[1200px]:w-5/6'>
           <div className='w-[460px] md:w-[340px] lg:lg:w-[460px] bg-[#FEFDFF] hover:bg-[#373c47] text-[#373c47] hover:text-white transition-colors duration-100 p-2 rounded-[2rem] shadow-2xl flex flex-col text-center'>
-            <img className='mt-3 min-[510px]:px-12 min-[710px]:px-24' src='projeto-LA.png' alt='Logo da LA e imagem de computador e celular com site da LA consultoria'/>
+            <img className='mt-3 px-10 min-[510px]:px-12 min-[710px]:px-24' src='projeto-LA.png' alt='Logo da LA e imagem de computador e celular com site da LA consultoria'/>
             <h4 className='text-3xl mt-4'>Lourdes Almeida <br /> Consultoria e Treinamento</h4>
             <p className='text-lg px-1 text-center mt-4 min-[710px]:px-10 min-[1500px]:text-xl'>Site portfólio feito para LA Consultoria e Treinamento apresentando serviços, cursos e página de cadastro e login para download de arquivos voltados ao Departamento Pessoal.</p>
           </div>
           <div className='w-[460px] md:w-[340px] lg:w-[460px] bg-[#FEFDFF] hover:bg-[#373c47] text-[#373c47] hover:text-white transition-colors duration-100 rounded-[2rem] shadow-2xl flex flex-col text-center mt-6 md:mt-0'>
-            <img className='pl-2 min-[510px]:pl-12 min-[510px]:pr-10 min-[710px]:pl-24 min-[710px]:pr-20' src='breve-1.png' alt='Em breve'/>
+            <img className='pl-5 pr-3 min-[510px]:pl-12 min-[510px]:pr-10 min-[710px]:pl-24 min-[710px]:pr-20' src='breve-1.png' alt='Em breve'/>
             <h4 className='text-3xl md:mt-4'>Bolão da Copa do Mundo</h4>
             <p className='text-lg px-1 text-center mt-2 min-[710px]:px-10 md:mt-8 min-[1500px]:text-xl'>Aplicativo onde você pode criar seu próprio bolão da copa para disputar com amigos quem é o melhor nos palpites. Projeto de estudo sendo desenvolvido na NLW da equipe RocketSeat.</p>
           </div>
