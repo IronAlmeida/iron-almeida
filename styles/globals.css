@@ -7,9 +7,14 @@
     background-color: #0F172A;
 }
 
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    }
+
 * {
     outline: none;
     list-style: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 #bg{
@@ -17,8 +22,8 @@
 }
 
 .bg{
-    background-color: #0F172A;
-    transition: 0.5s ease-in;
+    background-color: #0f172a91;
+    transition: 0.2s ease-in;
 }
 
 .style-3d{

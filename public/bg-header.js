@@ -7,3 +7,5 @@ window.addEventListener("scroll", () => {
         bg.classList.remove("bg")
     }
 })
+
+const a = document.querySelector(".nav a[href^='#']")

@@ -1,21 +1,14 @@
+import Head from "next/head";
 import '../styles/globals.css'
-import { Roboto, Raleway } from '@next/font/google'
-
-const roboto = Roboto({
-  weight: '400'
-})
-const raleway = Raleway({
-  weight: '400'
-})
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <style jsx global>{`
-        html {
-          font-family: ${raleway.style.fontFamily};
-        }
-      `}</style>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet"/>
+      </Head>
       <Component {...pageProps} />
     </>
   )
