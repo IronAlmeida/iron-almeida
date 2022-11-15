@@ -56,9 +56,13 @@
         @apply overflow-y-hidden;
     }
 
+    #nav ul{
+        @apply mt-8;
+    }
+
     #menu li {
         @apply font-bold;
-        @apply py-8;
+        @apply py-10;
         @apply border-opacity-10;
     }
 
