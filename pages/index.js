@@ -98,7 +98,7 @@ export default function Home() {
         <video className="w-full absolute hidden md:block" src="/bg-ia-horizontal.mp4" autoPlay loop muted />
         <video className="w-full absolute block md:hidden" src="/bg-ia-vertical.mp4" autoPlay loop muted />
         <div className='w-full relative top-40 min-[361px]:top-52 min-[541px]:top-64 min-[701px]:top-80 min-[768px]:top-24 min-[1024px]:top-32 min-[1280px]:top-40 min-[1500px]:top-52'>
-            <div className='w-full' data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000">
+            <div className='w-full'>
               <img className='m-auto w-full md:w-[58%] md:px-0 lg:w-[65%] xl:w-[58%]' src='/logo-ia-full-1190.png'/>
             </div>      
         </div>
@@ -118,7 +118,7 @@ export default function Home() {
           <div className='w-full bg-[#6B7280] rounded-lg pt-6 pb-2 px-1 text-center md:mb-4 xl:px-8 xl:text-left min-[1680px]:px-16'>
             <h2 data-aos="fade-up" className='text-5xl text-white italic font-bold text-center'>Sobre mim</h2>
             <br />
-            <p data-aos="fade-up" className='text-xl text-white min-[1500px]:text-2xl'>Olá! Me chamo Iron Almeida (acho que isso está bem claro &#x1F604;), sou desenvolvedor iniciante na criação de sites e aplicativos. Amante da tecnologia, entrei no mundo da programação ao fim do ensino médio e desde então venho buscando evoluir meus conhecimentos. Possuo ampla experiência em HTML e CSS e atualmente meu foco principal é no universo da linguagem JavaScript a qual tenho 1 ano de experiência com noções em Next.js, Node e React.</p>
+            <p data-aos="fade-up" className='text-xl text-white min-[1500px]:text-2xl'>Olá! Me chamo Iron Almeida (Acho que isso está bem claro &#x1F604;), sou desenvolvedor iniciante na criação de sites e aplicativos. Amante da tecnologia, entrei no mundo da programação ao fim do ensino médio e desde então venho buscando evoluir meus conhecimentos. Possuo ampla experiência em HTML e CSS e atualmente meu foco principal é no universo da linguagem JavaScript a qual tenho 1 ano de experiência com noções em Next.js, Node e React.</p>
           </div>
         </div>
       </section>
@@ -228,7 +228,7 @@ export default function Home() {
               </div>
               {/* VERSO */}
               <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col px-9 py-8 rounded-full text-center my-4 hover backface rotate'>
-                <p className='text-white text-base'>React é uma biblioteca JavaScript que permite a criação de sites de forma eficiente com diversos frameworks disponiveis. React Native é um dos frameworks React para desenvolvimento de aplicações mobile.</p>
+                <p className='text-white text-base'>React é uma biblioteca JavaScript que permite a criação de sites de forma eficiente com diversos frameworks disponíveis. React Native é um dos frameworks React para desenvolvimento de aplicações mobile.</p>
               </div> 
             </div> {/*Fim - Cartão REACT*/}
           </div>
@@ -243,7 +243,7 @@ export default function Home() {
             </div>
             {/* VERSO */}
             <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col px-6 py-12 rounded-full text-center my-4 hover backface rotate'>
-              <p className='text-white text-base'>Node.js é um ambiente de execução JavaScript no lado do servidor. Nele é realizado operações como por exemplo, a comunicação com o banco de dados e acesso de usários a uma página.</p>
+              <p className='text-white text-base'>Node.js é um ambiente de execução JavaScript no lado do servidor. Nele é realizado operações como por exemplo, a comunicação com o banco de dados e acesso de usuários a uma página.</p>
             </div> 
           </div> {/*Fim - Cartão NODE*/}
          </div>
