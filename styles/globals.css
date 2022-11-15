@@ -9,7 +9,7 @@
 
 ::-webkit-scrollbar-thumb {
     background: #ccc;
-    }
+}
 
 * {
     outline: none;
@@ -22,8 +22,8 @@
 }
 
 .bg{
-    background-color: #0f172a91;
-    transition: 0.2s ease-in;
+    background-color: #0f172a;
+    transition: 0.5s ease-in;
 }
 
 .style-3d{
@@ -90,8 +90,4 @@
         background-color: rgba(15, 23, 42, 0.5);
         backdrop-filter: blur(6px);
     }
-}
-
-@media (max-width: 320px){
-
 }
