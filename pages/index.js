@@ -103,9 +103,9 @@ export default function Home() {
             </div>      
         </div>
         <div className='max-[767px]:w-2/3 min-[768px]:w-1/3 m-auto flex justify-between relative max-[360px]:top-52 max-[420px]:top-68 max-[480px]:top-72 max-[540px]:top-80 max-[700px]:top-96 max-[767px]:top-[28rem] md:top-32 lg:top-32 xl:top-48 min-[1500px]:top-56 min-[2200px]:top-64'>
-          <a target='_blank' href='https://linkwhats.app/612cc6' className='hover:scale-125 transition duration-300'><AiOutlineWhatsApp data-aos="fade-right" data-aos-duration="2000" className='text-white text-4xl min-[421px]:text-5xl min-[640px]:text-6xl min-[768px]:text-3xl min-[1024px]:text-4xl min-[1700px]:text-5xl min-[2200px]:text-6xl  hover:text-green-500 '/></a>
-          <a target='_blank' href='https://github.com/IronAlmeida' className='hover:scale-125 transition duration-300'><AiFillGithub data-aos="fade-right" data-aos-duration="2500" className="text-white text-4xl min-[421px]:text-5xl min-[640px]:text-6xl min-[768px]:text-3xl min-[1024px]:text-4xl min-[1700px]:text-5xl min-[2200px]:text-6xl" /></a>
-          <a target='_blank' href='https://www.instagram.com/iron.almeida' className='hover:scale-125 transition duration-300'><AiOutlineInstagram data-aos="fade-right" data-aos-duration="3000" className='text-white text-4xl min-[421px]:text-5xl min-[640px]:text-6xl min-[768px]:text-3xl min-[1024px]:text-4xl min-[1700px]:text-5xl min-[2200px]:text-6xl hover:text-[#ED4956]'/></a>
+          <a target='_blank' rel="noreferrer" href='https://linkwhats.app/612cc6' className='hover:scale-125 transition duration-300'><AiOutlineWhatsApp data-aos="fade-right" data-aos-duration="2000" className='text-white text-4xl min-[421px]:text-5xl min-[640px]:text-6xl min-[768px]:text-3xl min-[1024px]:text-4xl min-[1700px]:text-5xl min-[2200px]:text-6xl  hover:text-green-500 '/></a>
+          <a target='_blank' rel="noreferrer" href='https://github.com/IronAlmeida' className='hover:scale-125 transition duration-300'><AiFillGithub data-aos="fade-right" data-aos-duration="2500" className="text-white text-4xl min-[421px]:text-5xl min-[640px]:text-6xl min-[768px]:text-3xl min-[1024px]:text-4xl min-[1700px]:text-5xl min-[2200px]:text-6xl" /></a>
+          <a target='_blank' rel="noreferrer" href='https://www.instagram.com/iron.almeida' className='hover:scale-125 transition duration-300'><AiOutlineInstagram data-aos="fade-right" data-aos-duration="3000" className='text-white text-4xl min-[421px]:text-5xl min-[640px]:text-6xl min-[768px]:text-3xl min-[1024px]:text-4xl min-[1700px]:text-5xl min-[2200px]:text-6xl hover:text-[#ED4956]'/></a>
         </div>
         <BsChevronDoubleDown className="w-1/4 m-auto animate-bounce relative max-[320px]:top-72 max-[360px]:top-72 max-[420px]:top-96 max-[480px]:top-96 max-[540px]:top-[27rem] max-[600px]:top-[30rem] max-[700px]:top-[33rem] max-[767px]:top-[38rem] md:top-40 min-[890px]:top-48 min-[1110px]:top-52 min-[1220px]:top-60 min-[1280px]:top-72 min-[1500px]:top-[22rem] min-[1800px]:top-[26rem] min-[2200px]:top-[30rem] text-white text-4xl min-[421px]:text-5xl min-[541px]:text-5xl min-[640px]:text-5xl min-[768px]:text-xl min-[1024px]:text-2xl min-[1800px]:text-3xl min-[2200px]:text-5xl mt-2" />   
       </section>
@@ -285,9 +285,9 @@ export default function Home() {
             <Link href='#home' activeClass="true" to="home" spy={true} smooth={true} offset={0} duration={600}><img className='m-auto' src="/logo-ia.png" width={80} height={80} /></Link>
           </div>
           <div className='w-2/4 m-auto flex justify-around items-center py-4'>
-              <a target='_blank' href='https://linkwhats.app/612cc6' className='hover:scale-125 transition duration-300'><AiOutlineWhatsApp className='text-white text-4xl hover:text-green-500'/></a>
-              <a target='_blank' href='https://github.com/IronAlmeida' className='hover:scale-125 transition duration-300'><AiFillGithub className="text-white text-4xl" /></a>
-              <a target='_blank' href='https://www.instagram.com/iron.almeida' className='hover:scale-125 transition duration-300 '><AiOutlineInstagram className='text-white text-4xl hover:text-[#ED4956]'/></a>
+              <a target='_blank' rel="noreferrer" href='https://linkwhats.app/612cc6' className='hover:scale-125 transition duration-300'><AiOutlineWhatsApp className='text-white text-4xl hover:text-green-500'/></a>
+              <a target='_blank' rel="noreferrer" href='https://github.com/IronAlmeida' className='hover:scale-125 transition duration-300'><AiFillGithub className="text-white text-4xl" /></a>
+              <a target='_blank' rel="noreferrer" href='https://www.instagram.com/iron.almeida' className='hover:scale-125 transition duration-300 '><AiOutlineInstagram className='text-white text-4xl hover:text-[#ED4956]'/></a>
             </div>
           <div className='text-center text-white text-lg py-2'>
             <h4>Copyright © Iron Almeida - Desenvolvedor Web e Mobile | 2022</h4>
