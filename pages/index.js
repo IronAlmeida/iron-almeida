@@ -127,7 +127,7 @@ export default function Home() {
         <div data-aos="fade-down" className='w-full m-auto text-center my-24 mb-8'>
           <h2 className='text-[#373c47] text-5xl italic font-bold'>Projetos</h2>
         </div>
-        <div className='w-full px-2 justify-around m-auto mt-12 flex flex-wrap items-center md:flex-nowrap md:mt-8 min-[1200px]:w-5/6'>
+        <div className='w-full px-2 justify-around m-auto mt-12 flex flex-wrap gap-10 items-center md:mt-8 min-[1200px]:w-5/6'>
           
           <div data-aos="zoom-in-down" className='w-[460px] md:w-[340px] lg:lg:w-[460px] bg-[#FEFDFF] text-[#373c47] md:hover:bg-[#373c47] md:hover:text-white transition-all duration-300 p-2 rounded-[2rem] shadow-2xl flex flex-col text-center'>
             <img className='mt-3 px-10 min-[510px]:px-12 min-[710px]:px-24' src='projeto-LA.png' alt='Logo da LA e imagem de computador e celular com site da LA consultoria'/>
@@ -146,6 +146,22 @@ export default function Home() {
             <div className='flex mt-6 ml-4'>
               <SiFirebase className='text-2xl'/>
               <p className='text-xl ml-1'>Firebase</p>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in-down" className='w-[460px] md:w-[340px] lg:lg:w-[460px] bg-[#FEFDFF] text-[#373c47] md:hover:bg-[#373c47] md:hover:text-white transition-all duration-300 p-2 rounded-[2rem] shadow-2xl flex flex-col'>
+            <img className='mt-3 px-10 min-[510px]:px-12 min-[710px]:px-24' src='mockup-gesst.png' alt='Logo da LA e imagem de computador e celular com site da LA consultoria'/>
+            <h4 className='text-2xl mt-4 font-bold text-center'>Grupo GESST</h4>
+            <p className='text-lg px-1 mt-4 min-[710px]:px-10 min-[1500px]:text-xl'>Site portfólio desenvolvido para o <strong>Grupo Gesst</strong>, empresa especializada em saúde e segurança do trabalho. Projeto apresenta a gestão realizada pela empresa descrevendo cada um dos serviços prestados com chamadas para ação encaminhando usuário para solicitação de orçamento ou contato com a equipe. </p>
+            <br/>
+            <h2 className='text-2xl text-center'>Tecnologias Utilizadas:</h2>
+            <div className='flex mt-6 ml-4'>
+              <TbBrandNextjs className='text-2xl'/>
+              <p className='text-xl ml-1'>Next.js</p>
+            </div>
+            <div className='flex mt-6 ml-4'>
+              <SiTailwindcss className='text-2xl'/>
+              <p className='text-xl ml-1'>Tailwind CSS</p>
             </div>
           </div>
 
