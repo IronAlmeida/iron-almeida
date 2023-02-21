@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Script from 'next/script'
-import {AiFillGithub, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
+import {AiFillGithub, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlineMenu, AiOutlineClose, AiOutlineGlobal} from "react-icons/ai"
 import {BsChevronDoubleDown} from "react-icons/bs"
 import {TbBrandNextjs} from "react-icons/tb"
 import {SiTailwindcss, SiFirebase} from "react-icons/si"
@@ -10,6 +10,9 @@ import Aos from "aos"
 import 'aos/dist/aos.css'
 
 export default function Home() {
+
+  const data = new Date()
+  const anoAtual = data.getFullYear()
 
   useEffect(() => {
     Aos.init({duration: 1500})
@@ -118,7 +121,7 @@ export default function Home() {
           <div className='w-full bg-[#6B7280] rounded-lg pt-6 pb-2 px-1 text-center md:mb-4 xl:px-8 xl:text-left min-[1680px]:px-16'>
             <h2 data-aos="fade-up" className='text-5xl text-white italic font-bold text-center'>Sobre mim</h2>
             <br />
-            <p data-aos="fade-up" className='text-xl text-white min-[1500px]:text-2xl'>Olá! Me chamo Iron Almeida (Acho que isso está bem claro &#x1F604;), sou desenvolvedor iniciante na criação de sites e aplicativos. Amante da tecnologia, entrei no mundo da programação ao fim do ensino médio e desde então venho buscando evoluir meus conhecimentos. Possuo ampla experiência em HTML e CSS e atualmente meu foco principal é no universo da linguagem JavaScript a qual tenho 1 ano de experiência com noções em Next.js, Node e React.</p>
+            <p data-aos="fade-up" className='text-xl text-white min-[1500px]:text-2xl'>Olá! Me chamo Iron Almeida, sou desenvolvedor iniciante na criação de sites e aplicativos. Amante da tecnologia, entrei no mundo da programação ao fim do ensino médio e desde então venho buscando evoluir meus conhecimentos. Possuo ampla experiência em HTML e CSS e atualmente meu foco principal é no universo da linguagem JavaScript a qual tenho 1 ano de experiência com noções em Next.js, Node e React.</p>
           </div>
         </div>
       </section>
@@ -127,14 +130,14 @@ export default function Home() {
         <div data-aos="fade-down" className='w-full m-auto text-center my-24 mb-8'>
           <h2 className='text-[#373c47] text-5xl italic font-bold'>Projetos</h2>
         </div>
-        <div className='w-full px-2 justify-around m-auto mt-12 flex flex-wrap gap-10 items-center md:mt-8 min-[1200px]:w-5/6'>
+        <div className='w-full px-2 justify-around m-auto mt-12 flex flex-wrap gap-10 md:mt-8 min-[1200px]:w-5/6'>
           
-          <div data-aos="zoom-in-down" className='w-[460px] md:w-[340px] lg:lg:w-[460px] bg-[#FEFDFF] text-[#373c47] md:hover:bg-[#373c47] md:hover:text-white transition-all duration-300 p-2 rounded-[2rem] shadow-2xl flex flex-col text-center'>
+          <div data-aos="zoom-in-down" className='w-[460px] md:w-[340px] lg:lg:w-[460px] bg-[#FEFDFF] text-[#373c47] md:hover:bg-[#373c47] md:hover:text-white transition-all duration-300 p-2 rounded-[2rem] shadow-2xl flex flex-col justify-around'>
             <img className='mt-3 px-10 min-[510px]:px-12 min-[710px]:px-24' src='projeto-LA.png' alt='Logo da LA e imagem de computador e celular com site da LA consultoria'/>
-            <h4 className='text-2xl mt-4 font-bold'>Lourdes Almeida <br /> Consultoria e Treinamento</h4>
+            <h4 className='text-2xl mt-4 font-bold text-center'>Lourdes Almeida <br /> Consultoria e Treinamento</h4>
             <p className='text-lg px-1 text-center mt-4 min-[710px]:px-10 min-[1500px]:text-xl'>Site portfólio desenvolvido para <strong>LA Consultoria e Treinamento</strong> apresentando seus serviços e cursos com formulário para solicitação de orçamento e página de cadastro e login para download de arquivos voltados ao Departamento Pessoal.</p>
             <br/>
-            <h2 className='text-2xl'>Tecnologias Utilizadas:</h2>
+            <h2 className='text-2xl text-center'>Tecnologias Utilizadas:</h2>
             <div className='flex mt-6 ml-4'>
               <TbBrandNextjs className='text-2xl'/>
               <p className='text-xl ml-1'>Next.js</p>
@@ -147,9 +150,12 @@ export default function Home() {
               <SiFirebase className='text-2xl'/>
               <p className='text-xl ml-1'>Firebase</p>
             </div>
+            <div className='flex mt-6 mx-auto'>
+              <a href='https://lourdesalmeidadp.com.br' target='_blank' rel='noreferrer'><button className='text-2xl border border-2 p-4 border-[#4B4F5F] rounded-lg'>Visitar projeto</button></a>
+            </div>
           </div>
 
-          <div data-aos="zoom-in-down" className='w-[460px] md:w-[340px] lg:lg:w-[460px] bg-[#FEFDFF] text-[#373c47] md:hover:bg-[#373c47] md:hover:text-white transition-all duration-300 p-2 rounded-[2rem] shadow-2xl flex flex-col'>
+          <div data-aos="zoom-in-down" className='w-[460px] md:w-[340px] lg:lg:w-[460px] bg-[#FEFDFF] text-[#373c47] md:hover:bg-[#373c47] md:hover:text-white transition-all duration-300 p-2 rounded-[2rem] shadow-2xl flex flex-col justify-around'>
             <img className='mt-3 px-10 min-[510px]:px-12 min-[710px]:px-24' src='mockup-gesst.png' alt='Logo da LA e imagem de computador e celular com site da LA consultoria'/>
             <h4 className='text-2xl mt-4 font-bold text-center'>Grupo GESST</h4>
             <p className='text-lg px-1 mt-4 min-[710px]:px-10 min-[1500px]:text-xl'>Site portfólio desenvolvido para o <strong>Grupo Gesst</strong>, empresa especializada em saúde e segurança do trabalho. Projeto apresenta a gestão realizada pela empresa descrevendo cada um dos serviços prestados com chamadas para ação encaminhando usuário para solicitação de orçamento ou contato com a equipe. </p>
@@ -162,6 +168,9 @@ export default function Home() {
             <div className='flex mt-6 ml-4'>
               <SiTailwindcss className='text-2xl'/>
               <p className='text-xl ml-1'>Tailwind CSS</p>
+            </div>
+            <div className='flex mt-6 mx-auto'>
+              <a href='https://grupogesst.com.br' target='_blank' rel='noreferrer'><button className='text-2xl border border-2 p-4 border-[#4B4F5F] rounded-lg'>Visitar projeto</button></a>
             </div>
           </div>
 
@@ -180,7 +189,7 @@ export default function Home() {
 
         <div className='w-full relative items-center flex flex-col mt-4 px-4 md:flex-row md:flex-wrap md:justify-around lg:w-5/6 m-auto'> {/* Inicio FLEX CARDS */} 
           <div data-aos="zoom-in-right" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-            <div onClick={flipCardhtml} id="html" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão HTML5 */}
+            <div onClick={flipCardhtml} id="html" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão HTML5 */}
                 {/* FRENTE */}
                 <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
                   <img className='m-auto' alt='Logo HTML5' width={150} height={150} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
@@ -194,7 +203,7 @@ export default function Home() {
           </div>
 
           <div data-aos="zoom-in-left" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-            <div onClick={flipCardcss} id="css" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão CSS3 */}
+            <div onClick={flipCardcss} id="css" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão CSS3 */}
                 {/* FRENTE */}
                 <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
                   <img className='m-auto' alt='Logo HTML5' width={150} height={150} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
@@ -208,7 +217,7 @@ export default function Home() {
           </div>
 
           <div data-aos="zoom-in-right" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-            <div onClick={flipCardjs} id="js" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão JS */}
+            <div onClick={flipCardjs} id="js" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão JS */}
               {/* FRENTE */}
               <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
                 <img className='m-auto' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg' alt='logo JavaScript' width={150} height={150}/>
@@ -222,7 +231,7 @@ export default function Home() {
           </div>
           
           <div data-aos="zoom-in-left" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-            <div onClick={flipCardnext} id="next" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão NEXT.JS */}
+            <div onClick={flipCardnext} id="next" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão NEXT.JS */}
               {/* FRENTE */}
               <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
                 <img className='m-auto' src='next.png' alt='logo Next.js' width={150} height={150}/>
@@ -236,7 +245,7 @@ export default function Home() {
           </div>
 
           <div data-aos="zoom-in-right" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-            <div onClick={flipCardreact} id="react" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão REACT */}
+            <div onClick={flipCardreact} id="react" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão REACT */}
               {/* FRENTE */}
               <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
                 <img className='m-auto' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' alt='logo React' width={150} height={150}/>
@@ -251,7 +260,7 @@ export default function Home() {
           
 
          <div data-aos="zoom-in-left" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-            <div onClick={flipCardnode} id="node" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão NODE */}
+            <div onClick={flipCardnode} id="node" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão NODE */}
             {/* FRENTE */}
             <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
               <img className='m-auto' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' alt='logo Node.js' width={150} height={150}/>
@@ -265,7 +274,7 @@ export default function Home() {
          </div>
 
         <div data-aos="zoom-in-right" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-          <div onClick={flipCardtailwind} id="tailwind" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão TAILWIND CSS */}
+          <div onClick={flipCardtailwind} id="tailwind" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão TAILWIND CSS */}
               {/* FRENTE */}
               <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
                 <img className='m-auto' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' alt='Logo Tailwind CSS' width={150} height={150}/>
@@ -280,7 +289,7 @@ export default function Home() {
 
           
         <div data-aos="zoom-in-left" className='w-[270px] h-[270px] relative my-4 md:m-4'>
-          <div onClick={flipCardfirebase} id="firebase" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear'>{/* Cartão FIREBASE */}
+          <div onClick={flipCardfirebase} id="firebase" className='absolute w-[270px] h-[270px] style-3d transition-all duration-500 ease-linear cursor-pointer'>{/* Cartão FIREBASE */}
               {/* FRENTE */}
               <div className='absolute w-[270px] h-[270px] bg-[#141f35] flex flex-col p-6 rounded-full text-center my-4 backface'>
                 <img className='m-auto' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' alt='Logo Firebase' width={150} height={150}/>
@@ -306,7 +315,7 @@ export default function Home() {
               <a target='_blank' rel="noreferrer" href='https://www.instagram.com/iron.almeida' className='hover:scale-125 transition duration-300 '><AiOutlineInstagram className='text-white text-4xl hover:text-[#ED4956]'/></a>
             </div>
           <div className='text-center text-white text-lg py-2'>
-            <h4>Copyright © Iron Almeida - Desenvolvedor Web e Mobile | 2022</h4>
+            <h4>Copyright © Iron Almeida - Desenvolvedor Web e Mobile | {anoAtual}</h4>
           </div>    
         </div>
       </section>
